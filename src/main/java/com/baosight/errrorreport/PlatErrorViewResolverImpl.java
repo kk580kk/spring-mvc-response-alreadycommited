@@ -17,6 +17,6 @@ public class PlatErrorViewResolverImpl implements ErrorViewResolver {
             put("iplat_msgKey", model.get("status").toString());
             put("iplat_msg", model.get("error"));
         }};
-        return new ModelAndView("forward:/EP/EP01.jsp", hashMap);
+        return new ModelAndView("EP/EP01", hashMap);
     }
 }
